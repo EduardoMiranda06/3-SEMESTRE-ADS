@@ -1,0 +1,12 @@
+DROP TABLE iiot.iiot_data;
+
+CREATE TABLE iiot.iiot_data (
+	id bigint generated always as identity primary key,
+	createdDate timestamp not null default now(),
+	emergencyButton boolean not null default false,
+	pressureSensor  boolean not null default false,
+	levelSensor  boolean not null default false,
+	qualitySensor boolean not null default false	
+);
+
+select * from iiot.iiot_data;

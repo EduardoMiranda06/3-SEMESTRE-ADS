@@ -1,0 +1,15 @@
+(*The main code inserted by the user and executed associated with the MainTask must be inserted into this POU.*)
+PROGRAM UserPrg
+
+VAR
+	ON_OFF_BUTTON : BOOL;
+	BUFFER_BUTTON : BOOL;
+	SYSTEM_ON : BOOL;
+	RED_LAMP : BOOL;
+	GREEN_LAMP : BOOL;	
+	MOTOR : BOOL;
+	PRESSURE_SENSOR : BOOL;
+	LEVEL_SENSOR : BOOL;
+	QUALITY_SENSOR : BOOL;
+	EMERGENCY_BUTTON : BOOL;
+END_VAR
