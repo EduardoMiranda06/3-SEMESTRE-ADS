@@ -1,0 +1,63 @@
+name: recanto_app
+description: Aplicativo institucional do Recanto dos Velhinhos de Valinhos.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  flutter_riverpod: ^2.4.0
+  riverpod_annotation: ^2.3.0
+
+  # Navigation
+  go_router: ^13.0.0
+
+  # UI & Styling
+  flutter_screenutil: ^5.9.0
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  
+  # URL Launcher
+  url_launcher: ^6.2.0
+
+  # HTTP (para futura integração com API)
+  http: ^1.1.0
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  
+  # Intl (para formatação de datas)
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_linter: ^3.0.0
+  build_runner: ^2.4.0
+  riverpod_generator: ^2.3.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/data/
+
+  fonts:
+    - family: AppFont
+      fonts:
+        - asset: assets/fonts/appfont_regular.ttf
+        - asset: assets/fonts/appfont_medium.ttf
+          weight: 500
+        - asset: assets/fonts/appfont_semibold.ttf
+          weight: 600
+        - asset: assets/fonts/appfont_bold.ttf
+          weight: 700
